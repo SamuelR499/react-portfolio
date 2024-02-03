@@ -66,3 +66,27 @@
     color: var(--color-primary);
     border-color: var(--color-primary);
 }
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+    .portfolio_projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+    .portfolio_categories {
+        gap: 0.6rem;
+    }
+
+    .btn.cat_btn {
+        padding: 0.7rem 0.8rem;
+    }
+
+    .portfolio_projects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+
+    }
+}
