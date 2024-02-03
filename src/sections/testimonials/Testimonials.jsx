@@ -23,7 +23,7 @@ function Testimonials() {
         >
           {testimonials.map(testimonial => (
             <SwiperSlide key={testimonial.id}>
-              <Testimonial />
+              <Testimonial testimonial={testimonial}/>
             </SwiperSlide>
           ))}
         </Swiper>
