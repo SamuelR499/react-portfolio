@@ -23,7 +23,7 @@ function App() {
       <FAQs />
       <Contact />
       <Footer />
-      {/* <Modal /> */}
+      <Modal />
       {/* <FloatingNav /> */}
 
     </main>
