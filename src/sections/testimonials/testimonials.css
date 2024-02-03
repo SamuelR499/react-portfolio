@@ -3,8 +3,7 @@
 }
 
 .swiper {
-    height: fit-content;
-    padding-bottom: 12rem;
+    height: 30rem;
     /* this paddint top is to give space for micro interaction on hover of swiper slide */
     padding-top: 1rem;
 }
@@ -28,10 +27,12 @@
     transition: var(--transition);
 }
 
-.swipper-pagination {
+.swiper-pagination {
     margin-bottom: 8rem;
 }
 
-.sw-bullet {
+
+.swiper-pagination-bullet {
     background: var(--color-primary);
 }
+
