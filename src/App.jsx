@@ -9,6 +9,7 @@ import FAQs from './sections/faqs/FAQs';
 import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
 import FloatingNav from './sections/floating-nav/FloatingNav';
+import Modal from './components/Modal';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       <FAQs />
       <Contact />
       <Footer />
-      <FloatingNav />
+      <Modal />
+      {/* <FloatingNav /> */}
 
     </main>
   )
