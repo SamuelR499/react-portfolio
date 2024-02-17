@@ -18,7 +18,9 @@ const Theme = () => {
         <div className="theme_background-wrapper">
             <h5>Background Color</h5>
             <div className="theme_background-colors">
-                {backgroundColors.map(bColor => <BackgroundColor key={bColor.className} className={bColor.className} />)}
+                {
+                    backgroundColors.map(bColor => <BackgroundColor key={bColor.className} className={bColor.className} />)
+                }
             </div>
         </div>
     </Modal>
