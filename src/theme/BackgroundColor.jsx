@@ -1,7 +1,7 @@
 
-const BackgroundColor = ({clasName}) => {
+const BackgroundColor = ({className}) => {
   return (
-    <div className={clasName}>BackgroundColor</div>
+    <button className={className} ></button>
   )
 }
 
