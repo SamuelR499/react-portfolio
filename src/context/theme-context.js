@@ -4,7 +4,7 @@ import themeReducer from './themeReducer';
 
 export const ThemeContext = createContext();
 
-const initialThemeStates = {primary: 'color-1', background: 'bg-1'}
+const initialThemeStates = JSON.parse(localStorage.getItem('themeSettings')) || {primary: 'color-1', background: 'bg-1'}
 
 export const ThemeProvider = ({children}) => {
     const [themeState, dispatchTheme] = useReducer(themeReducer, initialThemeStates);
