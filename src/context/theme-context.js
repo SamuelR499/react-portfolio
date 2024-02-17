@@ -1,5 +1,6 @@
-import { createContext, useContext, useReducer,useEffect } from "react";
-import { themeReducer } from "./themeReducer";
+import { createContext, useContext, useReducer, useEffect } from "react";
+import themeReducer from './themeReducer';
+
 
 export const ThemeContext = createContext();
 
@@ -11,6 +12,11 @@ export const ThemeProvider = ({children}) => {
     const themeHandler = (buttonClassName) => {
         dispatchTheme({type: buttonClassName})
     }
+    console.log(themeState);
+    return <ThemeContext.Provider value={{themeState, themeHandler}}>{children}</ThemeContext.Provider>
+}
 
-    return <ThemeContext.Provider>{children}</ThemeContext.Provider>
+// custom hook to use our theme contex wherever we want in our project
+export const useThemeContext = () => {
+    return useContext(ThemeContext);
 }
