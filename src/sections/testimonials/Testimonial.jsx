@@ -1,22 +1,18 @@
-import Card from "../../components/Card";
+import Card from "../../components/Card"
 
-
-function Testimonial({testimonial}) {
+const Testimonial = ({testimonial}) => {
   return (
-    <Card className="Light">
-        <p>
-            {testimonial.quote}
-            <div className="testimonial_client">
-                <div className="testimonial_client-avatar">
-                    <img src={testimonial.avatar} alt="Testimonial Avatar" />
-                </div>
-                <div className="testimonial client-details">
-                    <h6>{testimonial.name}</h6>
-                    <small>{testimonial.profession}</small>
-                </div>
+    <Card className="light">
+        <p>{testimonial.quote}</p>
+        <div className="testimonial__client">
+            <div className="testimonial__client-avatar">
+                <img src={testimonial.avatar} alt="Testimonial Avatar" />
             </div>
-        
-        </p>
+            <div className="testimonial__client-details">
+                <h6>{testimonial.name}</h6>
+                <small>{testimonial.profession}</small>
+            </div>
+        </div>
     </Card>
   )
 }

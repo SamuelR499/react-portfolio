@@ -1,9 +1,11 @@
-import { useThemeContext } from "../context/theme-context"
+
+import { useThemeContext } from './../context/theme-context';
 
 const BackgroundColor = ({className}) => {
-  const {themeHandler} = useThemeContext();
+  const {themeHandler} = useThemeContext()
+
   return (
-    <button className={className} onClick={()=> themeHandler(className)}></button>
+    <button className={className} onClick={() => themeHandler(className)}></button>
   )
 }
 

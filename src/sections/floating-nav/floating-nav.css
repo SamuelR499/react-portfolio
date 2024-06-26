@@ -1,4 +1,4 @@
-#floating_nav {
+#floating__nav {
     display: none;
 }
 
@@ -6,7 +6,7 @@
 
 /* MEDIA QUERIES (tablets and phones */
 @media screen and (max-width: 1024px) {
-    #floating_nav {
+    #floating__nav {
         display: flex;
         align-items: center;
         position: fixed;
@@ -38,7 +38,7 @@
         backdrop-filter: blur(20px);
     }
 
-    #floating_nav a {
+    #floating__nav a {
         padding: 0.6rem;
         border-radius: 50%;
         font-size: 1.3rem;
@@ -46,7 +46,7 @@
         display: grid;
     }
 
-    #floating_nav li.active a {
+    #floating__nav li.active a {
         background: var(--color-primary);
     }
 }

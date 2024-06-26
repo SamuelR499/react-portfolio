@@ -1,25 +1,24 @@
-import React from 'react'
 import Logo from '../../assets/logo.jpg'
-import data from './data.js'
-import { IoMdColorPalette } from "react-icons/io";
+import data from './data'
+import {IoIosColorPalette} from 'react-icons/io'
 import { useModalContext } from '../../context/modal-context'
 import './navbar.css'
 
-function Navbar() {
+const Navbar = () => {
   const {showModalHandler} = useModalContext();
 
   return (
     <nav>
-      <div className="container nav_container">
-        <a href="index.html" className='nav_logo'>
+      <div className="container nav__container">
+        <a href="index.html" className='nav__logo'>
           <img src={Logo} alt="Logo" />
         </a>
-        <ul className='nav_menu'>
+        <ul className='nav__menu'>
           {
-            data.map(item =><li key={item.id}><a href={item.link}>{item.title}</a></li>)
+            data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
           }
         </ul>
-        <button id='theme_icon' onClick={showModalHandler}><IoMdColorPalette /> </button>
+        <button id='theme__icon' onClick={showModalHandler}><IoIosColorPalette/></button>
       </div>
     </nav>
   )

@@ -46,31 +46,32 @@ body {
 
 
 
-/*THEME change using react*/
+
+
+
+
+
+
+
+/* THEME change using react */
 main.color-1 {
     --primary-hue: 270;
 }
-
 main.color-2 {
     --primary-hue: 110;
 }
-
 main.color-3 {
     --primary-hue: 240;
 }
-
-main.color-5 {
+main.color-4 {
     --primary-hue: 325;
 }
-
 main.color-5 {
     --primary-hue: 0;
 }
-
 main.color-6 {
     --primary-hue: 55;
 }
-
 
 main.bg-2 {
     --black-lightness: 96%;
@@ -87,6 +88,9 @@ main {
     color: var(--color-dark);
     --color-primary: hsl(var(--primary-hue), 89%, 41%);
 }
+
+
+
 
 
 
@@ -121,9 +125,9 @@ section > p {
 }
 
 
-/* GENERAL LINK STYLES */
+/* GENERAL SECTION STYLES */
 a {
-    color: var(--color-white);
+    /* color: var(--color-white); */
     transition: var(--transition);
 }
 
@@ -236,6 +240,9 @@ img {
         font-size: 2rem;
     }
 }
+
+
+
 
 
 /* MEDIA QUERIES (phones) */

@@ -1,4 +1,4 @@
-.card.theme_modal {
+.card.theme__modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -18,22 +18,22 @@
     }
 }
 
-.card.theme_modal:hover {
+.card.theme__modal:hover {
     background: #dedede; 
 }
 
-.card.theme_modal small {
+.card.theme__modal small {
     margin-top: 0.6rem;
     display: block;
     width: 80%;
     margin-inline: auto;
 }
 
-.theme_primary-wrapper {
+.theme__primary-wrapper {
     margin: 3rem 0;
 }
 
-.theme_primary-colors {
+.theme__primary-colors {
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -41,45 +41,46 @@
     margin-top: 1rem;
 }
 
-.theme_primary-colors button {
+.theme__primary-colors button {
     width: 2rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.theme_primary-colors .color-1{
+.theme__primary-colors .color-1 {
     background: hsl(270, 70%, 46%);
 }
 
-.theme_primary-colors .color-2 {
+.theme__primary-colors .color-2 {
     background: hsl(110, 70%, 46%);
 }
 
-.theme_primary-colors .color-3 {
+.theme__primary-colors .color-3 {
     background: hsl(240, 70%, 46%);
 }
 
-.theme_primary-colors .color-4 {
+.theme__primary-colors .color-4 {
     background: hsl(325, 70%, 46%);
 }
 
-.theme_primary-colors .color-5 {
+.theme__primary-colors .color-5 {
     background: hsl(0, 70%, 46%);
 }
 
-.theme_primary-colors .color-6 {
+.theme__primary-colors .color-6 {
     background: hsl(52, 70%, 46%);
 }
 
-.theme_background-colors {
+
+.theme__background-colors {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
 }
 
-.theme_background-colors button {
+.theme__background-colors button {
     width: 7rem;
     height: 2.5rem;
     background: white;
@@ -87,7 +88,7 @@
     cursor: pointer;
 }
 
-.theme_background-colors .bg-2 {
+.theme__background-colors .bg-2 {
     background: #111;
 }
 
@@ -95,12 +96,12 @@
 
 /* MEDIA QUERIES (phones) */
 @media screen and (max-width: 600px) {
-    .card.theme_modal {
+    .card.theme__modal {
         width: var(--container-width-md);
         padding: 3rem 1.5rem;
     }
 
-    .theme_primary-colors {
+    .theme__primary-colors {
         gap: 0.6rem;
     }
 }

@@ -8,19 +8,19 @@ import './about.css'
 const About = () => {
   return (
     <section id="about" data-aos="fade-in">
-        <div className="container about_container">
-            <div className="about_left">
-                <div className="about_portrait">
-                    <img src={AboutImage} alt="About_Image" />
+        <div className="container about__container">
+            <div className="about__left">
+                <div className="about__portrait">
+                    <img src={AboutImage} alt="About Image" />
                 </div>
             </div>
-            <div className="about_right">
+            <div className="about__right">
                 <h2>About Me</h2>
-                <div className="about_cards">
+                <div className="about__cards">
                     {
                         data.map(item => (
-                            <Card key={item.id} className="about_card">
-                                <span className='about_card-icon'>{item.icon}</span>
+                            <Card key={item.id} className="about__card">
+                                <span className='about__card-icon'>{item.icon}</span>
                                 <h5>{item.title}</h5>
                                 <small>{item.desc}</small>
                             </Card>

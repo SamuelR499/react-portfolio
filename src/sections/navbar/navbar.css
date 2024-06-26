@@ -10,37 +10,39 @@ nav {
     z-index: 9;
     box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
     transition: var(--transition);
-
 }
 
-.nav_container {
+.nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav_logo {
+.nav__logo {
     width: 2.5rem;
-    height: 2.5rem;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.nav_menu {
+.nav__menu {
     display: flex;
     gap: 3.5rem;
 }
 
-#theme_icon {
+.nav__menu a {
+    color: white;
+}
+
+#theme__icon {
     background: transparent;
     color: white;
     font-size: 2rem;
     cursor: pointer;
 }
 
-/* HIDE NAV MENU ON TABLET AND PHONES */
+/* HIDE NAV MENU ON TABLETS AND PHONES */
 @media screen and (max-width: 1024px) {
-    .nav_menu {
+    .nav__menu {
         display: none;
     }
 }
